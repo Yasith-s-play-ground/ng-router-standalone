@@ -1,0 +1,17 @@
+<main class="vh-100 d-flex justify-content-center align-items-center">
+  <section class="text-center border p-3 rounded">
+    <h2 class="mb-4">App Login</h2>
+    <div class="mb-3">
+      <label class="form-label" for="txt-username">Username</label>
+      <input #txtUsername class="text-center form-control" type="text" id="txt-username"
+             placeholder="Enter your username here">
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="txt-password">Password</label>
+      <input #txtPassword class="text-center form-control" type="password" id="txt-password"
+             placeholder="Enter your password here">
+    </div>
+
+    <button class="btn-primary btn" (click)="login(txtUsername,txtPassword)">Login</button>
+  </section>
+</main>

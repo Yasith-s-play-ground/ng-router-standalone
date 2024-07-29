@@ -1,0 +1,19 @@
+<main class="d-flex">
+  <nav class="border-end">
+    <h2 class="text-center mt-2">App</h2>
+    <menu class="list-unstyled text-center p-2 border-top">
+      <li routerLink="home" class="px-4 py-2" routerLinkActive="active">Home</li>
+      <li routerLink="first" class="px-4 py-2" routerLinkActive="active">First</li>
+      <li routerLink="second" class="px-4 py-2" routerLinkActive="active">Second</li>
+      <li routerLink="third" class="px-4 py-2" routerLinkActive="active">Third</li>
+      <!--We have removed router link here to prevent going to login without the logout
+      method being called -->
+      <li class="px-4 py-2" (click)="logout()">Logout</li>
+    </menu>
+  </nav>
+
+  <section class="p-2 text-center">
+    <!-- this is like a stage -->
+    <router-outlet/>
+  </section>
+</main>
